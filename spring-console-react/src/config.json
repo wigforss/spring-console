@@ -1,0 +1,39 @@
+{
+    "serverURL": "http://localhost:8080",
+    "meter": {
+        "type": {
+            "GAUGE": {
+                "icon": "Speed", 
+                "label": "Gauge" 
+            },
+            "COUNTER": { 
+                "icon": "PlusOne", 
+                "label": "Counter" 
+            },
+            "FUNCTION_COUNTER": { 
+                "icon": "AddBoxTwoTone", 
+                "label": "Function Counter" 
+            },
+            "TIMER": { 
+                "icon": "TimerOutlined", 
+                "label": "Timer" 
+            },
+            "FUNCTION_TIMER":  { 
+                "icon": "MoreTime", 
+                "label": "Function Timer" 
+            },
+            "LONG_TASK_TIMER": { 
+                "icon": "TimerTwoTone", 
+                "label": "Long Task Timer" 
+            },
+            "DISTRIBUTION_SUMMARY": { 
+                "icon": "Equalizer", 
+                "label": "Distribution Summary" 
+            },
+            "TIME_GAUEGE": { 
+                "icon": "NetworkCheck", 
+                "label": "Time Gauge" 
+            }
+        }
+    }
+}
