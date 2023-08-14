@@ -1,0 +1,108 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^4.5.8",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/lab": "^5.0.0-alpha.124",
+    "@mui/material": "^5.14.4",
+    "@mui/styled-engine": "^5.13.2",
+    "@mui/utils": "^5.11.13",
+    "axios": "^1.4.0",
+    "eslint": "^8.46.0",
+    "eslint-plugin-jsx-control-statements": "^3.0.0",
+    "jsx-control-statements": "^3.2.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-loadingg": "^1.7.2",
+    "react-query": "3.39.3",
+    "react-query-devtools": "^2.6.3",
+    "react-scripts": "^5.0.0",
+    "react-select": "^5.7.4",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "main": "/index.js",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@types/babel__core": "^7.20.1",
+    "@types/babel__preset-env": "^7.9.2",
+    "@types/eslint": "^8.44.2",
+    "@types/react-syntax-highlighter": "^15.5.7",
+    "babel-loader": "^9.1.3",
+    "babel-plugin-jsx-control-statements": "^4.1.2",
+    "babel-preset-react-app": "^10.0.1",
+    "html-webpack-plugin": "^5.5.3",
+    "react-scripts": "1.0.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "name": "spring-console",
+  "description": "Spring Boot Console",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "webpack serve --mode development --host 0.0.0.0 --port 80",
+    "start": "react-scripts start",
+    "build": "webpack --mode production",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "plugins": [
+      "jsx-control-statements"
+    ],
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "extends": [
+      "plugin:jsx-control-statements/recommended",
+      "react-app"
+    ],
+    "rules": {
+      "jsx-control-statements/jsx-choose-not-empty": 1,
+      "jsx-control-statements/jsx-for-require-each": 1,
+      "jsx-control-statements/jsx-for-require-of": 1,
+      "jsx-control-statements/jsx-for-require-body": 1,
+      "jsx-control-statements/jsx-if-require-condition": 1,
+      "jsx-control-statements/jsx-otherwise-once-last": 1,
+      "jsx-control-statements/jsx-use-if-tag": 1,
+      "jsx-control-statements/jsx-when-require-condition": 1,
+      "jsx-control-statements/jsx-jcs-no-undef": 1,
+      "react/jsx-no-undef": [
+        2,
+        {
+          "allowGlobals": true
+        }
+      ]
+    },
+    "env": {
+      "jsx-control-statements/jsx-control-statements": true
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "jsx-control-statements"
+    ]
+  }
+}
